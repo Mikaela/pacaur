@@ -1,0 +1,557 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pacaur\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mikaela Suomalainen <mikaela@mikaela.info>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+"X-Generator: Poedit 1.8.7\n"
+
+#: pacaur:105
+msgid "${colorW}Starting AUR upgrade...${reset}"
+msgstr "${colorW}Aloitetaan AUR-päivitys...${reset}"
+
+#: pacaur:113
+msgid "${colorW}$i${reset} is ${colorY}not present${reset} in AUR -- skipping"
+msgstr ""
+"${colorW}$i${reset} ei ${colorY}not present${reset} löydy AURista -- "
+"ohitetaan"
+
+#: pacaur:141 pacaur:195 pacaur:1048
+msgid "latest"
+msgstr "viimeisin"
+
+#: pacaur:146
+msgid "${checkaurpkgs[$i]} is in IgnorePkg/IgnoreGroup. Install anyway?"
+msgstr ""
+"${checkaurpkgs[$i]} on IgnorePkg/IgnoreGroup -asetuksessa. Asennetaanko se "
+"silti?"
+
+#: pacaur:147
+msgid "${colorW}${checkaurpkgs[$i]}${reset}: ignoring package upgrade"
+msgstr "${colorW}${checkaurpkgs[$i]}${reset}: sivuutetaan paketin päivitys"
+
+#: pacaur:152
+msgid ""
+"${colorW}${checkaurpkgs[$i]}${reset}: ignoring package upgrade "
+"(${colorR}${checkaurpkgsQver[$i]}${reset} => "
+"${colorG}${checkaurpkgsAver[$i]}${reset})"
+msgstr ""
+"${colorW}${checkaurpkgs[$i]}${reset}: sivuutetaan paketin päivitys "
+"(${colorR}${checkaurpkgsQver[$i]}${reset} => "
+"${colorG}${checkaurpkgsAver[$i]}${reset})"
+
+#: pacaur:164
+msgid "resolving dependencies..."
+msgstr "selvitetään riippuvuuksia..."
+
+# I am assuming this is search.
+#: pacaur:200
+#, fuzzy
+msgid "no results found for $i"
+msgstr "ei tuloksia haulle $i"
+
+#: pacaur:323
+msgid "dependency cycle detected"
+msgstr "kehäriippuvuus havaittu"
+
+#: pacaur:387 pacaur:402
+msgid "${colorW}$i${reset}: ignoring package upgrade"
+msgstr "${colorW}$i${reset}: sivuutetaan paketin päivitys"
+
+#: pacaur:388 pacaur:394 pacaur:399 pacaur:403
+msgid "Unresolved dependency '${colorW}$i${reset}'"
+msgstr "Selvittämätön riippuvuus '${colorW}$i${reset}'"
+
+# Is $i the package that depends on something or the depeency itself?
+#: pacaur:398
+#, fuzzy
+msgid "$i dependency is in IgnorePkg/IgnoreGroup. Install anyway?"
+msgstr ""
+"$i riippuvuus on IgnorePkg/IgnoreGroup -asetuksessa. Asennetaanko se silti?"
+
+#: pacaur:429
+msgid ""
+"${colorW}There are ${#providers[@]} providers available for "
+"${providersdeps[$i]}:${reset}"
+msgstr ""
+"${colorW} ${#providers[@]} pakettia tarjoaa ${providersdeps[$i]}:${reset}"
+
+#: pacaur:436
+msgid "Enter a number (default=0):"
+msgstr "Syötä numero (oletus=0):"
+
+#: pacaur:441
+msgid "invalid value: $nb is not between 0 and $providersnb"
+msgstr "Epäkelvollinen arvo: $nb ei ole arvojen 0 ja $providersnb välissä"
+
+#: pacaur:443
+msgid "invalid number: $nb"
+msgstr "Epäkelpo numero: $nb"
+
+# I have no idea what is inter-conflict, I have never encountered that term.
+#: pacaur:482
+#, fuzzy
+msgid "looking for inter-conflicts..."
+msgstr "Etsitään sisäisiä konflikteja..."
+
+#: pacaur:518 pacaur:587
+msgid "$j and $k are in conflict ($i). Remove $k?"
+msgstr "$j ja $k ovat ristiriidassa ($i). Pistetaanko $k?"
+
+# I am sure this could be said in a better way.
+#: pacaur:532 pacaur:595
+#, fuzzy
+msgid "unresolvable package conflicts detected"
+msgstr "selvittämättömiä pakettien ristiriitoja havaittu"
+
+# I cannot think or find any reasonable translation for "transaction" so I translate it as "task" instead.
+#: pacaur:533 pacaur:596
+#, fuzzy
+msgid "failed to prepare transaction (conflicting dependencies)"
+msgstr "tehtävän valmistelu epäonnistui (ristiriitaisia riippuvuuksia)"
+
+#: pacaur:534 pacaur:597
+msgid "$j and $k are in conflict"
+msgstr "$j ja $k ovat ristiriidassa"
+
+# revision turned into version which might be understandable, but I think it's incorrect, but I am unable to find a better translation.
+#: pacaur:613
+#, fuzzy
+msgid "${colorW}${depsAname[$i]}${reset} latest revision -- fetching"
+msgstr "${colorW}${depsAname[$i]}${reset}viimeisin versio -- noudetaan"
+
+#: pacaur:616
+msgid ""
+"${colorW}${depsAname[$i]}-${depsQver[$i]}${reset} is up to date -- "
+"reinstalling"
+msgstr ""
+"${colorW}${depsAname[$i]}-${depsQver[$i]}${reset} on ajan tasalla -- "
+"uudelleenasennetaan"
+
+#: pacaur:618
+msgid ""
+"${colorW}${depsAname[$i]}-${depsQver[$i]}${reset} is up to date -- skipping"
+msgstr ""
+"${colorW}${depsAname[$i]}-${depsQver[$i]}${reset} on ajan tasalla -- "
+"ohitetaan"
+
+# Finnish being one of the most difficult languages is easy to see with these translations.
+# This is translated correctly, but better would be editing the date itself which again is impossible.
+#: pacaur:631
+#, fuzzy
+msgid ""
+"${colorW}${depsAname[$i]}-${depsAver[$i]}${reset} has been flagged ${colorR}"
+"out of date${reset} on ${colorY}$(date -d \"@${depsAood[$i]}\" \"+%Y-%m-%d"
+"\")${reset}"
+msgstr ""
+"${colorW}${depsAname[$i]}-${depsAver[$i]}${reset} on merkitty ${colorR}"
+"vanhentuneeksi${reset} ajankohtana ${colorY}$(date -d \"@${depsAood[$i]}\" "
+"\"+%Y-%m-%d\")${reset}"
+
+# "in cache" as literal translation "välimuistitettu" feels incorrect.
+#: pacaur:656
+#, fuzzy
+msgid "(cached)"
+msgstr "(välimuistissa)"
+
+#: pacaur:661 pacaur:683
+msgid "Name"
+msgstr "Nimi"
+
+#: pacaur:661 pacaur:683
+msgid "Old Version"
+msgstr "Vanha versio"
+
+#: pacaur:661 pacaur:683
+msgid "New Version"
+msgstr "Uusi versio"
+
+# This word just seems a little funny.
+#: pacaur:661 pacaur:683
+#, fuzzy
+msgid "Download Size"
+msgstr "Latauskoko"
+
+#: pacaur:672 pacaur:696
+msgid "AUR Packages  (${#deps[@]}):"
+msgstr "AUR-paketit  (${#deps[@]}):"
+
+#: pacaur:682 pacaur:697
+msgid "Repo Packages (${#repodepspkgs[@]}):"
+msgstr "Ohjelmistolähteiden paketit (${#repodepspkgs[@]}):"
+
+#: pacaur:685
+#, fuzzy
+msgid "${binarysize[$i]} MiB"
+msgstr "${binarysize[$i]} MiB"
+
+# This doesn't feel right.
+#: pacaur:701
+#, fuzzy
+msgid "Repo Download Size:"
+msgstr "Ohjelmistolähteen latauskoko:"
+
+# This doesn't feel right.
+#: pacaur:701
+#, fuzzy
+msgid "Repo Installed Size:"
+msgstr "Ohjelmistolähteen koko asennettuna:"
+
+#: pacaur:701
+#, fuzzy
+msgid "$sumk MiB"
+msgstr "$sumk MiB"
+
+#: pacaur:701
+#, fuzzy
+msgid "$summ MiB"
+msgstr "$summ MiB"
+
+#: pacaur:710
+msgid "installation"
+msgstr "asennus"
+
+# As the previous is installation, I think this is download as adjective, not as verb.
+#: pacaur:710
+#, fuzzy
+msgid "download"
+msgstr "lataus"
+
+# "Proceed with action $action" as otherwise what $action is would have to be known to conjugate it properly.
+#: pacaur:711
+#, fuzzy
+msgid "Proceed with $action?"
+msgstr "Jatketaanko toimenpidettä $action?"
+
+#: pacaur:718
+msgid "${colorW}Retrieving package(s)...${reset}"
+msgstr "${colorW}Noudetaan paketteja(s)...${reset}"
+
+#: pacaur:751
+msgid "View $i build files diff?"
+msgstr ""
+
+#: pacaur:754
+msgid "${colorW}$i${reset} build files diff viewed"
+msgstr ""
+
+#: pacaur:758
+msgid "View $i PKGBUILD?"
+msgstr ""
+
+#: pacaur:759 pacaur:773
+msgid "${colorW}$i${reset} PKGBUILD viewed"
+msgstr ""
+
+#: pacaur:759 pacaur:773
+msgid "Could not open ${colorW}$i${reset} PKGBUILD"
+msgstr ""
+
+#: pacaur:764
+msgid "View $j script?"
+msgstr ""
+
+#: pacaur:765 pacaur:776
+msgid "${colorW}$j${reset} script viewed"
+msgstr ""
+
+#: pacaur:765 pacaur:776
+msgid "Could not open ${colorW}$j${reset} script"
+msgstr ""
+
+#: pacaur:835
+msgid "Checking ${colorW}${pkgsdeps[$i]}${reset} integrity..."
+msgstr ""
+
+#: pacaur:847
+msgid "failed to verify ${colorW}$i${reset} integrity"
+msgstr ""
+
+#: pacaur:852
+msgid "build.lck exists in $tmpdir"
+msgstr ""
+
+#: pacaur:857
+msgid ""
+"Installing ${colorW}${repoprovidersconflictingpkgs[@]}${reset} "
+"dependencies..."
+msgstr ""
+
+#: pacaur:881
+msgid "${colorW}$j${reset} is up-to-date -- skipping"
+msgstr ""
+
+#: pacaur:898
+msgid "Installing ${colorW}$j${reset} cached package..."
+msgstr ""
+
+#: pacaur:902
+msgid "Package ${colorW}$j${reset} already available in cache"
+msgstr ""
+
+#: pacaur:911
+msgid "Building ${colorW}${pkgsdeps[$i]}${reset} package(s)..."
+msgstr ""
+
+#: pacaur:947
+msgid "Installing ${colorW}${pkgsdeps[$i]}${reset} package(s)..."
+msgstr ""
+
+#: pacaur:949
+msgid ""
+"${colorW}${pkgsdeps[$i]}${reset} package(s) failed to install. Check ."
+"SRCINFO for mismatching data with PKGBUILD."
+msgstr ""
+
+#: pacaur:968
+msgid "Removing installed AUR dependencies..."
+msgstr ""
+
+#: pacaur:984
+msgid "${colorW}$i${reset} is a ${colorY}new orphan${reset} package"
+msgstr ""
+
+#: pacaur:989
+msgid "failed to build ${colorW}$i${reset} package(s)"
+msgstr ""
+
+#: pacaur:1015 pacaur:1047
+msgid "[ ignored ]"
+msgstr ""
+
+#: pacaur:1062
+msgid "Packages to keep:"
+msgstr ""
+
+#: pacaur:1062
+msgid "All locally installed packages"
+msgstr ""
+
+#: pacaur:1063
+msgid "AUR cache directory:"
+msgstr ""
+
+#: pacaur:1065
+msgid "Do you want to remove all other packages from AUR cache?"
+msgstr ""
+
+#: pacaur:1066
+msgid "removing old packages from cache..."
+msgstr ""
+
+#: pacaur:1070
+msgid "Do you want to remove ALL files from AUR cache?"
+msgstr ""
+
+#: pacaur:1071
+msgid "removing all files from AUR cache..."
+msgstr ""
+
+#: pacaur:1077
+msgid "Sources to keep:"
+msgstr ""
+
+#: pacaur:1077
+msgid "All development packages sources"
+msgstr ""
+
+#: pacaur:1078
+msgid "AUR source cache directory:"
+msgstr ""
+
+#: pacaur:1080
+msgid "Do you want to remove all non development files from AUR source cache?"
+msgstr ""
+
+#: pacaur:1081
+msgid "removing non development files from source cache..."
+msgstr ""
+
+#: pacaur:1085
+msgid "Do you want to remove ALL files from AUR source cache?"
+msgstr ""
+
+#: pacaur:1086
+msgid "removing all files from AUR source cache..."
+msgstr ""
+
+#: pacaur:1169
+msgid "failed to prepare transaction (could not satisfy dependencies)"
+msgstr ""
+
+#: pacaur:1170
+msgid "${Qrequires[@]}: requires $@"
+msgstr ""
+
+#: pacaur:1178
+msgid "$2 [Y/n] "
+msgstr ""
+
+#: pacaur:1185
+msgid "$2 [y/N] "
+msgstr ""
+
+#: pacaur:1216
+msgid " there is nothing to do"
+msgstr ""
+
+#: pacaur:1236
+msgid "usage:  pacaur <operation> [options] [target(s)] -- See also pacaur(8)"
+msgstr ""
+
+#: pacaur:1237
+msgid "operations:"
+msgstr ""
+
+#: pacaur:1238
+msgid " pacman extension"
+msgstr ""
+
+#: pacaur:1239
+msgid "   -S, -Q           extend pacman operations to the AUR"
+msgstr ""
+
+#: pacaur:1240
+msgid " AUR specific"
+msgstr ""
+
+#: pacaur:1241
+msgid "   -s, --search     search AUR for matching strings"
+msgstr ""
+
+#: pacaur:1242
+msgid "   -i, --info       view package information"
+msgstr ""
+
+#: pacaur:1243
+msgid ""
+"   -d, --download   download target(s) -- pass twice to download AUR "
+"dependencies"
+msgstr ""
+
+#: pacaur:1244
+msgid "   -m, --makepkg    download and make target(s)"
+msgstr ""
+
+#: pacaur:1245
+msgid "   -y, --sync       download, make and install target(s)"
+msgstr ""
+
+#: pacaur:1246
+msgid "   -k, --check      check for AUR update(s)"
+msgstr ""
+
+#: pacaur:1247
+msgid "   -u, --update     update AUR package(s)"
+msgstr ""
+
+#: pacaur:1248 pacaur:1256
+msgid " general"
+msgstr ""
+
+#: pacaur:1249
+msgid "   -v, --version    display version information"
+msgstr ""
+
+#: pacaur:1250
+msgid "   -h, --help       display help information"
+msgstr ""
+
+#: pacaur:1252
+msgid "options:"
+msgstr ""
+
+#: pacaur:1253
+msgid ""
+" pacman extension - can be used with the -S, -Ss, -Si, -Sii, -Sw, -Su, -Qu, -"
+"Sc, -Scc operations"
+msgstr ""
+
+#: pacaur:1254
+msgid ""
+"   -a, --aur        only search, build or install target(s) from the AUR"
+msgstr ""
+
+#: pacaur:1255
+msgid ""
+"   -r, --repo       only search, build or install target(s) from the "
+"repositories"
+msgstr ""
+
+#: pacaur:1257
+msgid "   -e, --edit       edit target(s) PKGBUILD and view install script"
+msgstr ""
+
+#: pacaur:1258
+msgid "   -q, --quiet      show less information for query and search"
+msgstr ""
+
+#: pacaur:1259
+msgid "   --devel          consider AUR development packages upgrade"
+msgstr ""
+
+#: pacaur:1260
+msgid "   --foreign        consider already installed foreign dependencies"
+msgstr ""
+
+#: pacaur:1261
+msgid ""
+"   --ignore         ignore a package upgrade (can be used more than once)"
+msgstr ""
+
+#: pacaur:1262
+msgid "   --needed         do not reinstall already up-to-date target(s)"
+msgstr ""
+
+#: pacaur:1263
+msgid "   --noconfirm      do not prompt for any confirmation"
+msgstr ""
+
+#: pacaur:1264
+msgid "   --noedit         do not prompt to edit files"
+msgstr ""
+
+#: pacaur:1265
+msgid "   --rebuild        always rebuild package(s)"
+msgstr ""
+
+#: pacaur:1266
+msgid "   --silent         silence output"
+msgstr ""
+
+#: pacaur:1392
+msgid "you cannot perform this operation as root"
+msgstr ""
+
+#: pacaur:1396
+msgid "${colorW}editor${reset} variable unset"
+msgstr ""
+
+#: pacaur:1397
+msgid ""
+"${colorW}clonedir${reset} or ${colorW}\\$AURDEST${reset} should be set to a "
+"non volatile memory location"
+msgstr ""
+
+#: pacaur:1398
+msgid "${colorW}$clonedir${reset} does not have write permission."
+msgstr ""
+
+#: pacaur:1399
+msgid "no targets specified (use -h for help)"
+msgstr ""
+
+#: pacaur:1400
+msgid "target not found"
+msgstr ""
+
+#: pacaur:1437 pacaur:1449 pacaur:1457
+msgid ""
+"Package(s) ${colorW}${aurpkgs[*]}${reset} not found in repositories, trying "
+"${colorM}AUR${reset}..."
+msgstr ""
